@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sholok - casting rays and shit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="kaioken.css">
+</head>
+<body class="grid grid-center grid-vertical">
+  <div class="col-4">
+    <input type="range" min="0" max="360" value="0" class="slider" step="1" id="angleOfRay" oninput="castAllFalse()">
+    <br><b>Angle of Ray: </b><i id="angleDispl"></i><br>
+    <input type="button" value="Cast All Rays" onclick="castAllTrue()">
+  </div>
+  <div class="col-4" id="simulation"></div>
+  <div class="col-4">
+    <p>Slide the slider to select a specific angle.<br>
+      Click the 'Cast All' button to cast rays in every angle at once.<br>
+      Slide the slider to reset after you've cast at all angles.<br>
+      Click on the grid to flip between free space and obstacle which blocks rays.
+    </p>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js'></script><script  src="script.js"></script>
+</body>
+</html>
